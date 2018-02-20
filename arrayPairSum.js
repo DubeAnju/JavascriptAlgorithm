@@ -9,7 +9,7 @@ function arrayPairSum(input, sum) {
     if (map[item] !== undefined) {
       result[item] =  map[item];
     } else {
-      map[sum - item] = item
+      map[sum - item] = item;
     }
   });
 
