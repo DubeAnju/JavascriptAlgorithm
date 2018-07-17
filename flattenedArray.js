@@ -16,4 +16,14 @@ function flattern(arr, output) {
 	return output;
 }
 
+// Using Javascript reduce method
+
+function flattenArray(arr) {
+	if (!arr) return;
+
+	return arr.reduce((acc, item) => {
+		return acc.concat(item);
+	});
+}
+
 console.info(flattern([1, [2, [ [3, 4], 5], 6]], []));
