@@ -34,9 +34,9 @@ function dfs(matrix, l, r) {
     matrix[l][r] = 0;
 
     dfs(matrix, l, r-1);
+    dfs(matrix, l, r+1);
     dfs(matrix, l-1, r);
     dfs(matrix, l+1, r);
-    dfs(matrix, l, r+1);
   }
 
 }

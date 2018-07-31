@@ -17,7 +17,7 @@ function longestPalindromicSubstring(str) {
   let max = 0;
   let start = 0;
 
-  for (let i=0; i< str.length; i++) {
+  for (let i=0; i< len; i++) {
     left = i -1;
     right = i +1;
 
@@ -26,7 +26,7 @@ function longestPalindromicSubstring(str) {
         right++;
     }
 
-    if (right - left + 1 > max) {
+    if (right - left - 1 > max) {
       max = right - left - 1;
       start = left + 1;
     }
