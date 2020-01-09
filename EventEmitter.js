@@ -1,8 +1,16 @@
-class EventEmitter {
-    constructor() {
-      this.events = new Map();
-    }
-};
+// create an Event Emitter in JS which includes following methods
+// subscribe, unsubscribe, emit
+//
+// When events are emitted through an emitter instance, all listeners for the given event type are invoked. example:
+// var emitter = new EventEmitter();
+// emitter.addListener('event', function(x, y) { console.log(x, y); });
+// emitter.emit('event', 5, 10);  // Listener prints "5 10".
+// Todo:Implement me
+// class EventEmitter {
+//     constructor() {
+//       this.events = new Map();
+//     }
+// };
 
 EventEmitter.prototype.subscribe = function (event, listener) {
     this.events.get(event) ?
